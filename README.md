@@ -15,7 +15,10 @@ Expense Tracker is an API built with Node.js and Express that allows users to ma
 
 ## Features
 
-List the features of your project here.
+- User authentication with JWT (JSON Web Tokens).
+- Secure password storage using bcrypt hashing.
+- CRUD operations for managing income transactions.
+- CRUD operations for managing expense transactions.
 
 ## Prerequisites
 
