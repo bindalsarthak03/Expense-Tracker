@@ -79,8 +79,6 @@ The `User` schema represents a user in the Expense Tracker application. It conta
 - `incomes`: An array of references to income transactions associated with the user.
 - `expenses`: An array of references to expense transactions associated with the user.
 
-When a user is deleted, a pre-remove hook is triggered in the `User` schema, which removes all associated income and expense transactions.
-
 ### Income Schema
 
 The `Income` schema represents an income transaction in the Expense Tracker application. It contains the following fields:
