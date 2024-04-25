@@ -19,6 +19,7 @@ Expense Tracker is an API built with Node.js and Express that allows users to ma
 - Secure password storage using bcrypt hashing.
 - CRUD operations for managing income transactions.
 - CRUD operations for managing expense transactions.
+- Integrated Google oAuth2.0 authentication 
 
 ## Prerequisites
 
@@ -114,8 +115,6 @@ The use of references (`user`) in the `Income` and `Expense` schemas establishes
 - Bcrypt
 ## Future Enahncements
 In the future, the Expense Tracker API will undergo the following enhancements:
-
-- **Integration with Google OAuth**: Implementing Google OAuth for user authentication, allowing users to sign up  and sign in using their Google accounts.
 
 - **Improved API Testing and Documentation**: Continuing to enhance the Swagger UI for better API testing and 
   documentation. This includes refining existing endpoints documentation and adding new endpoints as the API 
