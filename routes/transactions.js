@@ -1,3 +1,5 @@
+const passport = require('passport');
+require('../Passport')
 const { registerUser, loginUser, signout } = require('../controllers/authentication')
 const { addExpense, getExpenses, deleteExpense } = require('../controllers/expense')
 const { addIncome, getIncomes, deleteIncome } = require('../controllers/income')
@@ -145,6 +147,15 @@ const router = require('express').Router()
  */
 
 
+//google oauth2.0
+router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+router.get('/auth/google/callback',
+  passport.authenticate('google', { failureRedirect: '/login' }),
+  (req, res) => {
+    // Successful authentication, redirect to a success page or do something else
+    res.redirect('/');
+  }
+);
 
 //login signup api
 router.post('/register', registerUser)
